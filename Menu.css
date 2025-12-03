@@ -1,0 +1,256 @@
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRco1pC67wSEhlgBgD-uEYblqhhU3YqaZSLvg&s');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Sans-serif;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: orangered;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    background-color: orange;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+}
+h2{
+    font-size: 60px;
+    color: orangered;
+    text-align: center;
+}
+.icoca{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#coca{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pcoca{
+    text-align: center;
+    border-top: 2px solid;
+}
+.boisson{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.ifanta{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#fanta{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pfanta{
+    text-align: center;
+    border-top: 2px solid;
+}
+.isprite{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#sprite{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.psprite{
+    text-align: center;
+    border-top: 2px solid;
+}
+.ioasis{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#oasis{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.poasis{
+    text-align: center;
+    border-top: 2px solid;
+}
+.ischweppes{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#schweppes{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pschweppes{
+    text-align: center;
+    border-top: 2px solid;
+}
+.i7up{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#up7{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.p7up{
+    text-align: center;
+    border-top: 2px solid;
+}
+.ifrites{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#frites{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pfrites{
+    text-align: center;
+    border-top: 2px solid;
+}
+.inuggets{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#nuggets{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pnuggets{
+    text-align: center;
+    border-top: 2px solid;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+.sauce{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+.iketchup{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#ketchup{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pketchup{
+    text-align: center;
+    border-top: 2px solid;
+}
+.imayonnaise{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+}
+#mayonnaise{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pmayonnaise{
+    text-align: center;
+    border-top: 2px solid;
+}
+.dessert{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+.iglace{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+    object-fit: contain;
+}
+#glace{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pglace{
+    text-align: center;
+    border-top: 2px solid;
+}
+.iyaourt{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+    object-fit: contain;
+}
+#yaourt{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pyaourt{
+    text-align: center;
+    border-top: 2px solid;
+}
+.idonut{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 2px;
+    object-fit: contain;
+}
+#donut{
+    border: 1px solid;
+    width: 155px;
+    background-color: white;
+}
+.pdonut{
+    text-align: center;
+    border-top: 2px solid;
+}
+#valider{
+    position: relative;
+    left: 37%;
+    margin-top: 8%;
+}

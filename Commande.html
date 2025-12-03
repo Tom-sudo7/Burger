@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On mange quoi ?</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRco1pC67wSEhlgBgD-uEYblqhhU3YqaZSLvg&s');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: Sans-serif, Arial;
+            text-align: center;
+            height: 100vh;
+        }
+        #img{
+            width: 30%;
+            object-fit: contain;
+            position: relative;
+        }
+        .separation{
+            width: 1px;
+            height: 100%;
+            background-color: black;
+        }
+        h1{
+            font-size: 45px;
+            position: relative;
+            bottom: 250px;
+            left: 5%;
+            color: greenyellow;
+        }
+        li{
+            font-size: x-large;
+            position: relative;
+            right: 300px;
+            bottom: 100px;
+        }
+        #te{
+            display: none;
+            position: relative;
+            left: 620px;
+            bottom: 500px;
+        }
+        #nu{
+            display: none;
+            position: relative;
+            left: 620px;
+            bottom: 500px;
+        }
+        #tep{
+            display: none;
+            position: relative;
+            left: 620px;
+            bottom: 500px;
+        }
+        #nup{
+            display: none;
+            position: relative;
+            left: 620px;
+            bottom: 500px;
+        }
+        button{
+            display: none;
+            position: relative;
+            bottom: 450px;
+            left: 620px;
+            width: 100px;
+            height: 30px;
+        }
+        #loca{
+            display: none;
+            position: relative;
+            bottom: 500px;
+            left: 680px;
+            color: orange;
+            font-size: 37px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.informatiquegifs.com/metier/cuisinier/gifs-cuisinier-7.gif" id="img">
+        <div class="separation"></div>
+        <h1>Suivi de votre commande</h1>
+        <ul id="commande">
+            <li>Burger</li>
+            <li>Boisson</li>
+            <li>Frite/Nuggets</li>
+            <li>Sauce</li>
+            <li>Dessert</li>
+        </ul>
+    </div>
+    <h2 id="loca">Livraison en cours</h2>
+    <h2 id="tep">Votre adresse entière</h2>
+    <input type="text" id="te">
+    <h2 id="nup">Votre numéro de téléphone</h2>
+    <input type="number" id="nu">
+    <button onclick="exe()">Valider</button>
+
+    <script>
+        const items = document.querySelectorAll("#commande li");
+        const gif = document.getElementById("img");
+        const inte = document.getElementById("te");
+        const innu = document.getElementById("nu");
+        const intep = document.getElementById("tep");
+        const innup = document.getElementById("nup");
+        const but = document.querySelector('button');
+        const loca = document.getElementById('loca')
+
+        setTimeout(() => {
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    item.remove();
+                    if(index === items.length - 1) {
+                        ok()
+                    }
+                }, index * 1000); 
+            });
+        }, 1000); 
+
+        function ok() {
+            inte.style.display = "block";
+            innu.style.display = "block";
+            intep.style.display = "block";
+            innup.style.display = "block";
+            but.style.display = "block";
+            gif.src = "https://cdnl.iconscout.com/lottie/premium/thumb/notebook-writing-animation-gif-download-4380071.gif"
+            gif.style.right = "60px";
+        }
+
+        function exe() {
+            const valeurInte = inte.value;
+            const valeurInnu = innu.value;
+
+            if (valeurInte === "" || valeurInnu === "") {
+                alert("Une des formulaires est vide ou mal tapé");
+            } else {
+                inte.style.display = "none";
+                innu.style.display = "none";
+                intep.style.display = "none";
+                innup.style.display = "none";
+                but.style.display = "none";
+                loca.style.display = "block";
+                gif.src = "https://www.bing.com/th/id/OGC.4f59b3df4c9fba3fbae4e88439a04024?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f2067022%2fscreenshots%2f4186739%2f______.gif&ehk=5loa0lwG9pG9thdPEVMMV6nDeG6S9FJzH5z5BpqeL6U%3d";
+                setTimeout(() => {
+                    gif.src = "https://media.tenor.com/OmXkQ34-jfkAAAAj/ubereats-uber.gif";
+                    loca.innerHTML = "Livraison terminé"
+                }, 1800000);
+            }
+        }
+    </script>
+</body>
+</html>

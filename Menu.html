@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Menu.css">
+    <title>On mange quoi ?</title>
+</head>
+<body>
+    <h1>1.Quel burger ?</h1>
+    <div class="container">
+        <button onclick="che()" class="che">Chesseburger</button>
+        <button onclick="ham()" class="ham">Hamburger</button>
+        <button onclick="dob()">Double burger</button>
+        <button onclick="fis()">Fishburger</button>
+    </div>
+    <div id="e2">
+        <h2>2.Quelle boisson ?</h2>
+        <div class="boisson">
+            <div id="coca">
+                <img src="https://th.bing.com/th/id/OIP.gOSWD16OMZ6vAMmKT8ltUwHaHa?w=184&h=185&c=7&r=0&o=7&pid=1.7&rm=3" class="icoca">
+                <p class="pcoca">Coca-cola</p>
+            </div>
+            <div id="fanta">
+                <img src="https://th.bing.com/th/id/OPEC.WPHsW718s6CMiA474C474?w=220&h=220&c=17&o=5&pid=21.1" class="ifanta">
+                <p class="pfanta">Fanta</p>
+            </div>
+            <div id="sprite">
+                <img src="https://th.bing.com/th/id/OIP.QajzyjfldorESfVa6dathwHaHa?w=181&h=181&c=7&r=0&o=7&pid=1.7&rm=3" class="isprite">
+                <p class="psprite">Sprite</p>
+            </div>
+            <div id="oasis">
+                <img src="https://th.bing.com/th/id/OIP.XJhDzlACSzFu_MIDdbThEwHaHa?w=192&h=192&c=7&r=0&o=7&pid=1.7&rm=3" class="ioasis">
+                <p class="poasis">Oasis</p>
+            </div>
+            <div id="schweppes">
+                <img src="https://prod.isg.bruneau.media/asset/aHR0cHM6Ly9icnVuZWF1LnNpbXBsZXdvcmtzcGFjZS5uZXQvZmlsZS9wdWJBc3NldEJhc2UvS2doNV9jc0VYNl8tWVZtcDhXTUNweEJtcGZuTEUxT2o4Sk5vdjhOVTJIWGloVHVpU0xJLzE3MzMzMDMyMjQwMDAwL3MvNzAwOTA1LmpwZw==/?format=avif&height=477&quality=60&trim=&width=477" class="ischweppes">
+                <p class="pschweppes">Schweppes</p>
+            </div>
+            <div id="up7">
+                <img src="https://th.bing.com/th/id/OIP.PkRF-akXZB4ZZYixFZJx7wHaHa?w=187&h=187&c=7&r=0&o=7&pid=1.7&rm=3" class="i7up">
+                <p class="p7up">7up</p>
+            </div>
+        </div>
+    </div>
+    <div id="ep3">
+        <h2>3.Frites ou nuggets ?</h2>
+        <div class="principal">
+            <div id="frites">
+                <img src="https://th.bing.com/th/id/OIP.KD9NZEzc7MU9zMeE5JzX7QHaE7?w=222&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="ifrites">
+                <p class="pfrites">Frites</p>
+            </div>
+            <div id="nuggets">
+                <img src="https://le-mediterraneen.fr/wp-content/uploads/2020/04/ori-nuggets-poulet-591-scaled.jpg" class="inuggets">
+                <p class="pnuggets">Nuggets</p>
+            </div>
+        </div>
+    </div>
+    <div id="ep4">
+        <h2>4.Quelle sauce ?</h2>
+        <div class="sauce">
+            <div id="ketchup">
+                <img src="https://th.bing.com/th/id/OIP.FozYfWe_KtPAqtXEbDZXqwHaHa?w=156&h=191&c=7&r=0&o=7&pid=1.7&rm=3" class="iketchup">
+                <p class="pketchup">Ketchup</p>
+            </div>
+            <div id="mayonnaise">
+                <img src="https://th.bing.com/th/id/OIP.-ast7XdU8NPrPwLywHNs7QHaHa?w=168&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="imayonnaise">
+                <p class="pmayonnaise">Mayonnaise</p>
+            </div>
+        </div>
+    </div>
+    <div id="ep5">
+        <h2>Un dessert ?</h2>
+        <div class="dessert">
+            <div id="glace">
+                <img src="https://th.bing.com/th/id/OIP.PTcvvwP1zkpu6QhnSeDjogHaIA?w=140&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="iglace">
+                <p class="pglace">Glaces</p>
+            </div>
+            <div id="yaourt">
+                <img src="https://th.bing.com/th/id/OIP.HQwVIdU6SVYhGPOA2NGZFwHaHa?w=195&h=195&c=7&r=0&o=7&pid=1.7&rm=3" class="iyaourt">
+                <p class="pyaourt">Yaourt à boire</p>
+            </div>
+            <div id="donut">
+                <img src="https://th.bing.com/th/id/OIP.KslQRgp5je6thD2XdDc-HAHaF6?w=232&h=185&c=7&r=0&o=7&pid=1.7&rm=3" class="idonut">
+                <p class="pdonut">Donut</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="valider" onclick="commande()">Valider</button>
+
+    <script src="Menu.js"></script>
+</body>
+</html>
